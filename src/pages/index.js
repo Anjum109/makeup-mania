@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Layout from '@/components/Layout/Layout'
 import Banner from '@/components/HomeComp/Banner/Banner'
+import SecondBanner from '@/components/HomeComp/Banner/SecondBanner'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,10 @@ export default function Home() {
       <link rel="icon" href="favicon.PNG" sizes="any" />
       </Head>
    <Layout>
+<div className='banner-bg bg-[#f3efef]'>
 <Banner/>
+<SecondBanner/>
+</div>
    </Layout>
     </main>
   )

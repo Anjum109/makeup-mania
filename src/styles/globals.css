@@ -49,3 +49,54 @@
 }
 
 /* navbar end  */
+
+/* banner start  */
+.wave-border {
+  position: relative;
+}
+
+.wave-border-inner {
+  
+ 
+
+  animation: wave-animation 2s infinite linear;
+}
+
+@keyframes wave-animation {
+  0% {
+    border-color: rgb(241, 194, 194);
+  }
+  25% {
+    border-color: #f0d8d8;
+  }
+  50% {
+    border-color: #f3b7b7;
+  }
+  75% {
+    border-color: #faa7a7;
+  }
+  100% {
+    border-color: #fb9595;
+  }
+}
+
+/* banner background  */
+.banner-bg{
+  background-image: url('../assets/banner/output-onlinejpgtools.png'); 
+  /* background-image: url('../assets/banner/EIA.w800.h800.305572ID_1.png'); 2 */
+  background-repeat: no-repeat;
+  background-position:  left -80% bottom 80%; 
+ /* background-position:  left -10% bottom 800%; 2 */
+ background-blend-mode:color-burn;
+}
+/* banner end  */
+
+/* 2nd banner start  */
+/* .second-banner-bg{
+background-image: url('../assets//banner/1.png') ;
+background-repeat: no-repeat;
+background-position:top center;
+background-blend-mode: multiply;
+} */
+
+/* 2nd banner end  */
