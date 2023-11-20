@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* navbar start  */
+
+.nav-button {
+  position: relative;
+}
+
+.hover-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 10px;
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: revealContent 0.3s ease forwards;
+  border-top: 2px solid #f5b1b1;
+}
+
+@keyframes revealContent {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-button:hover .hover-content {
+  display: block;
+}
+
+
+
+.nav-button {
+  cursor: pointer;
+}
+
+.hover-content div {
+  margin-bottom: 5px;
+}
+
+/* navbar end  */
