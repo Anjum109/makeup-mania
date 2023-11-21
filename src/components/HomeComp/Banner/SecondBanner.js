@@ -16,7 +16,7 @@ export default function SecondBanner() {
   }, []);
 
   return (
-    <div className='h-[1000px] max-w-screen-lg mx-auto mt-[200px]'>
+    <div className='h-[1000px] max-w-screen-lg mx-auto mt-12 lg:mt-[200px]'>
       <div className='second-banner-bg'>
         <div
           className='flex justify-center'
@@ -28,7 +28,7 @@ export default function SecondBanner() {
         >
           <Image src={img} alt='img' />
         </div>
-        <p className='text-center text-[50px] font-bold mt-[-30px]'>
+        <p className='text-center text-[30px] lg:text-[50px] font-bold lg:mt-[-30px]'>
           <span className={kanit.className}>
             An Incredible <span className='text-red-500'>Spa Experience</span>
           </span>
