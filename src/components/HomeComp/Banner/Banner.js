@@ -1,5 +1,5 @@
 import React from 'react'
-import banner1 from '../../../assets/banner/banner.JPG'
+import banner1 from '../../../assets/banner/banner.jpg'
 import Image from 'next/image'
 import { bebas, dancing, kanit } from '@/font/font'
 import { FaShoppingCart } from "react-icons/fa";

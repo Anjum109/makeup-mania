@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../../assets/images/logo/logo.PNG'
+import logo from '../../assets/images/logo/logo.png'
 import Image from 'next/image'
 import { smooch_sans} from '@/font/font'
 import { useRouter } from 'next/router';

@@ -1,8 +1,8 @@
 import { bebas } from '@/font/font'
 import Image from 'next/image';
 import React from 'react'
-import img1 from '../../assets/banner/claymask.PNG'
-import img2 from '../../assets/banner/spa.JPG'
+import img1 from '../../assets/banner/claymask.png'
+import img2 from '../../assets/banner/spa.jpg'
 
 import { FaShoppingCart } from "react-icons/fa";
 
