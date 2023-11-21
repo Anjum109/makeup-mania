@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
+import LargeScreenDrawer from './LargeScreenDrawer';
 
 export default function Navbar() {
     
@@ -39,21 +40,23 @@ export default function Navbar() {
     const handleDrawerToggle = () => {
         setIsDrawerOpen(!isDrawerOpen);
     };
+   
 
   return (
-    <div className={`px-5 lg:px-12 py-3  bg-[#f3efef] ${isScrolled ? 'fixed top-0 w-full z-50 border-b-2' : ''}`}>
+    <div className={`px-5 lg:px-12 py-3  bg-[#f3efef] ${isScrolled ? ' top-0 w-full z-50 border-b-2 sticky' : ''}`}>
       <div className='flex justify-between items-center'>
-      <div className='flex items-center'>
+      <Link href='/'>
+      <div className='flex items-center cursor-pointer'>
             <Image src={logo} alt='logo' className='w-[45px] lg:w-[55px]' />
             <h4 className='text-[30px] lg:text-[40px]'> <span className={smooch_sans.className}>Makeup Mania</span> </h4>
-        </div>
+        </div></Link>
         {/* large screen navbar buttons start  */}
         <div className='hidden lg:block'>
         <div  className={smooch_sans.className}>
           <div className='flex gap-12 text-[25px] '>
-          <button className='hover:font-semibold'> Home </button>
-          <button className='hover:font-semibold'>About</button>
-          <button className='nav-button hover:font-semibold'>
+          <button className='hover:font-semibold transition-all duration-1000'> Home </button>
+          <button className='hover:font-semibold transition-all duration-1000'>About</button>
+          <button className='nav-button hover:font-semibold transition-all duration-1000'>
          Services+
             <div className='hover-content text-start'>
               <div className='px-5 border-b-2'> <span>Services 1</span> </div>
@@ -64,10 +67,10 @@ export default function Navbar() {
           </button>
            
           <button className='nav-button'>
-         <span className='hover:font-semibold'>Shop</span>
+         <span className='hover:font-semibold transition-all duration-1000'>Shop</span>
           </button>
-            <button className='hover:font-semibold'> <span className='hover:font-semibold'>Blog</span> </button>
-            <button className='nav-button hover:font-semibold'>
+            <button className='hover:font-semibold transition-all duration-1000'> <span className='hover:font-semibold transition-all duration-1000'>Blog</span> </button>
+            <button className='nav-button hover:font-semibold transition-all duration-1000'>
           Pages+
             <div className='hover-content text-start'>
               <div className='px-5 border-b-2'>Appointment Grid</div>
@@ -80,22 +83,19 @@ export default function Navbar() {
               
             </div>
           </button>
-            <button className='hover:font-semibold'>Contact</button>
+            <button className='hover:font-semibold transition-all duration-1000'>Contact</button>
             </div>  
         </div>
         </div>
          {/* large screen navbar buttons end  */}
         {/* large screen menu bar  */}
-         <div className='hidden lg:block'>
-          <button className='bg-white rounded-full w-[40px] h-[40px] flex justify-center flex-col items-center hover:bg-[#f5b1b1] '>
-          <div>
-          <div className='bg-black w-[15px] h-[3px]'/>
-           <div className='flex justify-end'>
-           <div className='bg-black w-[10px] h-[3px] mt-1'/>
-           </div>
-          </div>
-          </button>
-        </div>
+       
+                {/* small screen menu bar */}
+                <div className='lg:block hidden'>
+                    <LargeScreenDrawer />
+                </div>
+             
+     
            {/* large screen menu bar  */}
         {/* small screen menu bar  */}
         <div className='lg:hidden flex items-center'>
@@ -109,7 +109,7 @@ export default function Navbar() {
                             </button>
                         )}
                     </div>
-        <div className={`fixed top-20 left-0 w-full text-center  bg-red-100 h-full overflow-y-auto transform  duration-300 ease-in-out ${isDrawerOpen ? 'translate-x-0' : '-translate-x-full'} lg:hidden`} >
+        <div className={`fixed top-20 left-0 w-full text-center  bg-red-100 h-full overflow-y-auto transform  duration-1000 ease-in-out ${isDrawerOpen ? 'translate-x-0 ' : '-translate-x-full'} lg:hidden`} >
                         {/* Drawer content */}
                         <ul className='flex flex-col text-pink-700 font-bold text-[18px]'>
                        

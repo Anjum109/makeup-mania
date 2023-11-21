@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
       <title>Makeup Mania</title>
       <meta property="og:title" content="My page title" key="title" />
-      <link rel="icon" href="favicon.PNG" sizes="any" />
+      <link rel="icon" href="favicon.png" sizes="any" />
       </Head>
    <Layout>
 <div className='banner-bg bg-[#f3efef]'>
