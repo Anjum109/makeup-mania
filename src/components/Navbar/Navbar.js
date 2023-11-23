@@ -43,7 +43,11 @@ export default function Navbar() {
    
 
   return (
-    <div className={`px-5 lg:px-12 py-3  bg-[#f3efef] ${isScrolled ? ' top-0 w-full z-50 border-b-2 sticky' : ''}`}>
+    <div
+    className={`px-5 lg:px-12 py-3 bg-[#f3efef] ${
+      isScrolled ? 'top-0 w-full z-50 border-b-2 sticky transition-all duration-1000' : ''
+    }`}
+  >
       <div className='flex justify-between items-center'>
       <Link href='/'>
       <div className='flex items-center cursor-pointer'>

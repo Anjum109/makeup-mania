@@ -1,4 +1,4 @@
-import { Bebas_Neue, Dancing_Script, Kanit, Smooch_Sans } from "next/font/google";
+import { Bebas_Neue, Cinzel, Dancing_Script, Kanit, Smooch_Sans } from "next/font/google";
 
 export const smooch_sans = Smooch_Sans({
   subsets: ['latin'],
@@ -17,5 +17,10 @@ export const bebas = Bebas_Neue({
 export const dancing = Dancing_Script({
   subsets: ['latin'],
   weight:['400']
+  
+});
+export const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight:['600']
   
 });
