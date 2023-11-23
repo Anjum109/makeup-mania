@@ -6,7 +6,7 @@ export const smooch_sans = Smooch_Sans({
 });
 export const kanit = Kanit({
   subsets: ['latin'],
-  weight:['300']
+  weight:['300','600']
   
 });
 export const bebas = Bebas_Neue({

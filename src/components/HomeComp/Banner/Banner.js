@@ -25,9 +25,9 @@ export default function Banner() {
 </div>
 
             </div>
-            <div className='border-t-[15px] border-l-[15px] border-r-[15px] border-red-400 rounded-full mx-12 wave-border-inner hidden lg:block'>
+            <div className='hidden lg:block border-t-[15px] border-l-[15px] border-r-[15px] border-red-400 rounded-full mx-12 wave-border-inner '>
            <div className='border-t-[15px] border-l-[15px] border-r-[15px] border-red-300 rounded-full '>
-          <div className=' hidden lg:block border-t-[15px] border-l-[15px] border-r-[15px] border-red-200 rounded-full wave-border-inner'>
+          <div className='  border-t-[15px] border-l-[15px] border-r-[15px] border-red-200 rounded-full wave-border-inner'>
            
 <Image src={banner1} alt='img' className='rounded-full w-[500px] h-[500px]'/>
           

@@ -96,17 +96,17 @@ export default function LargeScreenDrawer() {
 </div>
         </div>
        </div>
-       <div className='flex justify-center items-center mt-12 text-[30px] gap-5 text-red-500 '>
-       <div className='hover:text-red-900 cursor-pointer'>
+       <div className='flex justify-center items-center mt-12 text-[30px] gap-5  '>
+       <div className='hover:text-red-400 trasition transition-all duration-1000 text-gray-700 cursor-pointer'>
        <FaFacebook/>
        </div>
-       <div className='hover:text-red-900 cursor-pointer'>
+       <div className='hover:text-red-400 trasition transition-all duration-1000 text-gray-700 cursor-pointer'>
         <RiWhatsappFill/>
         </div>
-      <div className='hover:text-red-900 cursor-pointer'>
+      <div className='hover:text-red-400 trasition transition-all duration-1000 text-gray-700 cursor-pointer'>
        <FaLinkedin/>
        </div>
-       <div className='hover:text-red-900 cursor-pointer'>
+       <div className='hover:text-red-400 trasition transition-all duration-1000 text-gray-700 cursor-pointer'>
         <FaTwitter/>
         </div>
        </div>

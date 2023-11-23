@@ -57,8 +57,6 @@
 
 .wave-border-inner {
   
- 
-
   animation: wave-animation 2s infinite linear;
 }
 
@@ -100,3 +98,91 @@ background-blend-mode: multiply;
 } */
 
 /* 2nd banner end  */
+/* beauty and spa  */
+
+
+
+.beautyspa-bg {
+  background-image: url('../assets/images/stone.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-blend-mode: color-burn;
+  position: relative;
+  height: 260px;
+  animation: moveBackground 10s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2cm);
+  }
+  100% {
+    transform: translateY(2cm);
+  }
+}
+.beautyspa2-bg {
+  background-image: url('../assets/images/12.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-blend-mode: color-burn;
+  position: relative;
+  height: 150px;
+  animation: moveBackground 10s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% ,100%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2cm);
+  }
+   
+}
+.img2 {
+  animation: img2Background 10s linear infinite;
+}
+
+@keyframes img2Background {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-2cm);
+  }
+}
+
+/* our services  */
+.flowermove{
+  animation: flowermove 10s linear infinite;
+
+}
+@keyframes flowermove {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1cm);
+  }
+}
+.flowerstoneservice{
+  background-image: url('../assets/images/stoneflower.png');
+  background-repeat: no-repeat;
+  background-position: bottom left -10%;
+  background-blend-mode: color-burn;
+  position: relative;
+  height: 280px;
+  animation: flowerstoneservic 10s linear infinite;
+
+}
+@keyframes flowerstoneservic {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1cm);
+  }
+}

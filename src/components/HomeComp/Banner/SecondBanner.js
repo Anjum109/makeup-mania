@@ -5,26 +5,14 @@ import img from '../../../assets/banner/1.png';
 import SpaTopic from '../SpaTopic';
 
 export default function SecondBanner() {
-  const [translateX, setTranslateX] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTranslateX((prevTranslateX) => (prevTranslateX === 0 ? -2 : 0));
-    }, 1500);
-
-    return () => clearInterval(interval);
-  }, []);
+ 
 
   return (
-    <div className='h-[1000px] max-w-screen-lg mx-auto mt-12 lg:mt-[200px]'>
+    <div className='pb-20 max-w-screen-lg mx-auto mt-12 lg:mt-[200px]'>
       <div className='second-banner-bg'>
         <div
-          className='flex justify-center'
-          style={{
-            transform: `translateX(${translateX}%)`,
-            transition: 'transform 1s ease',
-            mixBlendMode:'color-burn' // Smooth transition over 1 second
-          }}
+          className='flex justify-center flowermove mix-blend-color-burn'
+          
         >
           <Image src={img} alt='img' />
         </div>

@@ -4,6 +4,8 @@ import Head from 'next/head'
 import Layout from '@/components/Layout/Layout'
 import Banner from '@/components/HomeComp/Banner/Banner'
 import SecondBanner from '@/components/HomeComp/Banner/SecondBanner'
+import BeautySpa from '@/components/HomeComp/BeautySpa'
+import OurServices from '@/components/HomeComp/OurServices'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +21,10 @@ export default function Home() {
 <div className='banner-bg bg-[#f3efef]'>
 <Banner/>
 <SecondBanner/>
+<BeautySpa/>
+</div>
+<div className='bg-pink-100 mt-[-100px]'>
+<OurServices/>
 </div>
    </Layout>
     </main>
