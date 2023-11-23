@@ -7,6 +7,8 @@ import SecondBanner from '@/components/HomeComp/Banner/SecondBanner'
 import BeautySpa from '@/components/HomeComp/BeautySpa'
 import OurServices from '@/components/HomeComp/OurServices'
 import PricePlans from '@/components/HomeComp/PricePlans'
+import PhotoGallary from '@/components/HomeComp/PhotoGallary'
+import MakeApponintment from '@/components/MakeAppointment/MakeApponintment'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +29,10 @@ export default function Home() {
 <div className='bg-pink-100 mt-[-100px]'>
 <OurServices/>
 <PricePlans/>
+<PhotoGallary/>
+<MakeApponintment/>
 </div>
+
 
 
 

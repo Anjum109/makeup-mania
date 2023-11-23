@@ -73,7 +73,7 @@ export default function Navbar() {
           <button className='nav-button'>
          <span className='hover:font-semibold transition-all duration-1000'>Shop</span>
           </button>
-            <button className='hover:font-semibold transition-all duration-1000'> <span className='hover:font-semibold transition-all duration-1000'>Blog</span> </button>
+            <button className='hover:font-semibold transition-all duration-1000'> <span className='hover:font-semibold transition-all duration-1000 text-red-400'>Make Appoinment</span> </button>
             <button className='nav-button hover:font-semibold transition-all duration-1000'>
           Pages+
             <div className='hover-content text-start'>
@@ -139,7 +139,7 @@ export default function Navbar() {
                             </li>
                             <li className='hover:bg-pink-900 hover:text-pink-100 p-[9px]'>
                            
-                                    <button>Blog</button>
+                                    <button>Make Appoinment</button>
                                 
                             </li>
                           
