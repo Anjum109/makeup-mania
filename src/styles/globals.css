@@ -172,7 +172,7 @@ background-blend-mode: multiply;
   }
 }
 @media only screen and (min-width: 1000px) {
-.flowerstoneservice{
+/* .flowerstoneservice{
   background-image: url('../assets/images/stoneflower.png');
   background-repeat: no-repeat;
   background-position: bottom left -10%;
@@ -189,4 +189,10 @@ background-blend-mode: multiply;
   50% {
     transform: translateX(-1cm);
   }
-}}
+} */
+.pinkf{
+  background-image: url('../assets/images/pinkf.png');
+  background-repeat: no-repeat;
+  background-position: top 30% right;
+}
+}

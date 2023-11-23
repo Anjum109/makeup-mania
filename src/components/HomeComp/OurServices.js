@@ -12,7 +12,7 @@ export default function OurServices() {
    
 
   return (
-  <div>
+  <div className='pinkf'>
       <div className='py-20 max-w-screen-lg mx-auto'>
        <div
           className='flex justify-center flowermove mix-blend-color-burn'
@@ -26,7 +26,7 @@ export default function OurServices() {
         </h1>
        </div>
     <p className='text-center text-[16px] text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-    <div className='grid grid-cols-1 lg:grid-cols-4 gap-5 mt-20 mx-5 lg:mx-0'>
+    <div className='grid grid-cols-1 lg:grid-cols-4 gap-5 mt-20 mx-5 lg:mx-0 '>
         <div className='flex flex-col justify-center items-center bg-pink-200 hover:bg-pink-50 transition-all duration-1000 hover:border-2 hover:border-pink-200 p-8 cursor-pointer ' style={{borderTopLeftRadius:'90px',borderTopRightRadius:'150px',borderBottomLeftRadius:'80px',borderBottomRightRadius:'60px'}}>
             <div>
                 <Image src={img1} alt='img1' className='w-[100px]' />
@@ -52,7 +52,7 @@ export default function OurServices() {
             <div>
                 <Image src={img4} alt='img1' className='w-[100px]' />
             </div>
-            <p className='text-[25px] font-bold text-gray-700 hover:text-red-400 transition-all duration-1000'><span className={kanit.className}>Mortar</span></p>
+            <p className='text-[25px] font-bold text-gray-700 hover:text-red-400 transition-all duration-1000'><span className={kanit.className}>Medicine</span></p>
             <p className='text-center text-[13px] text-gray-500'>Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
         </div>
     </div>
