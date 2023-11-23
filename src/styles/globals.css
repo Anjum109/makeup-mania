@@ -79,6 +79,7 @@
 }
 
 /* banner background  */
+@media only screen and (min-width: 1000px) {
 .banner-bg{
   background-image: url('../assets/banner/output-onlinejpgtools.png'); 
   /* background-image: url('../assets/banner/EIA.w800.h800.305572ID_1.png'); 2 */
@@ -142,6 +143,7 @@ background-blend-mode: multiply;
   }
    
 }
+}
 .img2 {
   animation: img2Background 10s linear infinite;
 }
@@ -156,6 +158,7 @@ background-blend-mode: multiply;
 }
 
 /* our services  */
+
 .flowermove{
   animation: flowermove 10s linear infinite;
 
@@ -168,6 +171,7 @@ background-blend-mode: multiply;
     transform: translateX(-1cm);
   }
 }
+@media only screen and (min-width: 1000px) {
 .flowerstoneservice{
   background-image: url('../assets/images/stoneflower.png');
   background-repeat: no-repeat;
@@ -185,4 +189,4 @@ background-blend-mode: multiply;
   50% {
     transform: translateX(-1cm);
   }
-}
+}}

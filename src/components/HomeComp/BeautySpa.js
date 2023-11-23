@@ -11,7 +11,7 @@ export default function BeautySpa() {
     <div className='beautyspa-bg animate-bg'>
 
     </div>
-      <div className='max-w-screen-xl mx-auto mt-[-200px] pb-[200px]'>
+      <div className='max-w-screen-xl mx-auto lg:mt-[-200px] pb-[200px]'>
         <div className='grid grid-cols-1 lg:grid-cols-2 justify-center'>
             <div className='flex justify-center'>
 
