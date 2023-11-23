@@ -9,8 +9,6 @@ import img4 from '../../assets/images/services/bottle.png'
 
 export default function OurServices() {
 
-   
-
   return (
   <div className='pinkf'>
       <div className='py-20 max-w-screen-lg mx-auto'>

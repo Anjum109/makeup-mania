@@ -20,23 +20,21 @@ export default function Home() {
       <meta property="og:title" content="My page title" key="title" />
       <link rel="icon" href="favicon.png" sizes="any" />
       </Head>
-   <Layout>
-<div className='banner-bg bg-[#f3efef]'>
-<Banner/>
-<SecondBanner/>
-<BeautySpa/>
-</div>
-<div className='bg-pink-100 mt-[-100px]'>
-<OurServices/>
-<PricePlans/>
-<PhotoGallary/>
-<MakeApponintment/>
-</div>
-
-
-
-
-   </Layout>
+        <Layout>
+            <div className='banner-bg bg-[#f3efef]'>
+              <Banner/>
+              <SecondBanner/>
+              <BeautySpa/>
+            </div>
+            <div className='bg-pink-100 mt-[-100px]'>
+              <OurServices/>
+              <PricePlans/>
+              <PhotoGallary/>
+            </div>
+            <div className=' bg-[#f3efef]'>
+              <MakeApponintment/> 
+            </div>
+        </Layout>
     </main>
   )
 }

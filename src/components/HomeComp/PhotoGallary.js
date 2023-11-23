@@ -10,7 +10,7 @@ import { kanit } from '@/font/font'
 
 export default function PhotoGallary() {
   return (
-    <div className='grid grid-cols-6 py-12 '>
+    <div className='grid grid-cols-6 pt-12 '>
          <div className='relative group'>
         <Image src={img1} alt='img' className='object-cover opacity-80 transition-opacity duration-300 group-hover:opacity-100 hover:transform hover:scale-105' />
         <div className='absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center'> <button className='bg-red-400 px-5 py-1 text-white rounded-xl'><span className={kanit.className}>Make Appointment</span></button></div>

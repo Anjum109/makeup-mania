@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className='hidden lg:block'>
         <div  className={smooch_sans.className}>
           <div className='flex gap-12 text-[25px] '>
-          <button className='hover:font-semibold transition-all duration-1000'> Home </button>
+         <Link href='/'> <button className='hover:font-semibold transition-all duration-1000'> Home </button></Link>
           <button className='hover:font-semibold transition-all duration-1000'>About</button>
           <button className='nav-button hover:font-semibold transition-all duration-1000'>
          Services+
@@ -73,7 +73,8 @@ export default function Navbar() {
           <button className='nav-button'>
          <span className='hover:font-semibold transition-all duration-1000'>Shop</span>
           </button>
-            <button className='hover:font-semibold transition-all duration-1000'> <span className='hover:font-semibold transition-all duration-1000 text-red-400'>Make Appoinment</span> </button>
+           <Link href='/makeappoint'>
+           <button className='hover:font-semibold transition-all duration-1000'> <span className='hover:font-semibold transition-all duration-1000 text-red-400'>Make Appointment</span> </button></Link>
             <button className='nav-button hover:font-semibold transition-all duration-1000'>
           Pages+
             <div className='hover-content text-start'>
@@ -139,7 +140,7 @@ export default function Navbar() {
                             </li>
                             <li className='hover:bg-pink-900 hover:text-pink-100 p-[9px]'>
                            
-                                    <button>Make Appoinment</button>
+                                    <button>Blog</button>
                                 
                             </li>
                           

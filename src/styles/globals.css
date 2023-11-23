@@ -28,6 +28,7 @@
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -56,7 +57,7 @@
 }
 
 .wave-border-inner {
-  
+
   animation: wave-animation 2s infinite linear;
 }
 
@@ -64,15 +65,19 @@
   0% {
     border-color: rgb(241, 194, 194);
   }
+
   25% {
     border-color: #f0d8d8;
   }
+
   50% {
     border-color: #f3b7b7;
   }
+
   75% {
     border-color: #faa7a7;
   }
+
   100% {
     border-color: #fb9595;
   }
@@ -80,78 +85,89 @@
 
 /* banner background  */
 @media only screen and (min-width: 1000px) {
-.banner-bg{
-  background-image: url('../assets/banner/output-onlinejpgtools.png'); 
-  /* background-image: url('../assets/banner/EIA.w800.h800.305572ID_1.png'); 2 */
-  background-repeat: no-repeat;
-  background-position:  left -80% bottom 80%; 
- /* background-position:  left -10% bottom 800%; 2 */
- background-blend-mode:color-burn;
-}
-/* banner end  */
+  .banner-bg {
+    background-image: url('../assets/banner/output-onlinejpgtools.png');
+    /* background-image: url('../assets/banner/EIA.w800.h800.305572ID_1.png'); 2 */
+    background-repeat: no-repeat;
+    background-position: left -80% bottom 80%;
+    /* background-position:  left -10% bottom 800%; 2 */
+    background-blend-mode: color-burn;
+  }
 
-/* 2nd banner start  */
-/* .second-banner-bg{
+  /* banner end  */
+
+  /* 2nd banner start  */
+  /* .second-banner-bg{
 background-image: url('../assets//banner/1.png') ;
 background-repeat: no-repeat;
 background-position:top center;
 background-blend-mode: multiply;
 } */
 
-/* 2nd banner end  */
-/* beauty and spa  */
+  /* 2nd banner end  */
+  /* beauty and spa  */
 
 
 
-.beautyspa-bg {
-  background-image: url('../assets/images/stone.png');
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-blend-mode: color-burn;
-  position: relative;
-  height: 260px;
-  animation: moveBackground 10s linear infinite;
+  .beautyspa-bg {
+    background-image: url('../assets/images/stone.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-blend-mode: color-burn;
+    position: relative;
+    height: 260px;
+    animation: moveBackground 10s linear infinite;
+  }
+
+  @keyframes moveBackground {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-2cm);
+    }
+
+    100% {
+      transform: translateY(2cm);
+    }
+  }
+
+  .beautyspa2-bg {
+    background-image: url('../assets/images/12.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-blend-mode: color-burn;
+    position: relative;
+    height: 150px;
+    animation: moveBackground 10s linear infinite;
+  }
+
+  @keyframes moveBackground {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-2cm);
+    }
+
+  }
 }
 
-@keyframes moveBackground {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-2cm);
-  }
-  100% {
-    transform: translateY(2cm);
-  }
-}
-.beautyspa2-bg {
-  background-image: url('../assets/images/12.png');
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-blend-mode: color-burn;
-  position: relative;
-  height: 150px;
-  animation: moveBackground 10s linear infinite;
-}
-
-@keyframes moveBackground {
-  0% ,100%{
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-2cm);
-  }
-   
-}
-}
 .img2 {
   animation: img2Background 10s linear infinite;
 }
 
 @keyframes img2Background {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-2cm);
   }
@@ -159,20 +175,26 @@ background-blend-mode: multiply;
 
 /* our services  */
 
-.flowermove{
+.flowermove {
   animation: flowermove 10s linear infinite;
 
 }
+
 @keyframes flowermove {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-1cm);
   }
 }
+
 @media only screen and (min-width: 1000px) {
-/* .flowerstoneservice{
+
+  /* .flowerstoneservice{
   background-image: url('../assets/images/stoneflower.png');
   background-repeat: no-repeat;
   background-position: bottom left -10%;
@@ -190,9 +212,51 @@ background-blend-mode: multiply;
     transform: translateX(-1cm);
   }
 } */
-.pinkf{
-  background-image: url('../assets/images/pinkf.png');
-  background-repeat: no-repeat;
-  background-position: top 30% right;
+  .pinkf {
+    background-image: url('../assets/images/pinkf.png');
+    background-repeat: no-repeat;
+    background-position: top 30% right;
+  }
 }
+
+/* make appointment  */
+.appoint-bg {
+  background-image: url('../assets/banner/appoint.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* Add this to your existing CSS or create a new stylesheet */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  /* Adjust the duration and timing function as needed */
+}
+
+/* Add this to your existing CSS or create a new stylesheet */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 300px;
+    /* Adjust the max-height value based on your content height */
+  }
+}
+
+.dropdown-content {
+  opacity: 0;
+  overflow: hidden;
+  animation: fadeIn 0.8s ease-in-out forwards;
+  /* Adjust the duration and timing function as needed */
+}
+
+.dropdown-content.open {
+  opacity: 1;
 }

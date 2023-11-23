@@ -27,7 +27,7 @@ export default function BeautySpa() {
                     <p className='text-[12px] pb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore mel ei harum appellantur disputationi</p>
                     <button className='flex gap-1 text-[20px] justify-center  items-center border-2 border-gray-300 rounded-full p-3 hover:bg-red-100 bg-red-400 text-white transition-all duration-1000 hover:text-red-900'><div className='text-[30px] '><MdArrowRightAlt/></div>
                         <div>  </div>
-                        <button className={cinzel.className}>Learn More</button>
+                        <span className={cinzel.className}>Learn More</span>
                     </button>
                 </div>
             </div>
