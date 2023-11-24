@@ -57,9 +57,9 @@ export default function Navbar() {
         <div className='hidden lg:block'>
           <div className={smooch_sans.className}>
             <div className='flex gap-12 text-[25px] '>
-              <Link href='/'> <button className='hover:font-semibold transition-all duration-1000'> Home </button></Link>
-              <Link href='/aboutus'><button className='hover:font-semibold transition-all duration-1000'>About</button></Link>
-              <button className='nav-button hover:font-semibold transition-all duration-1000'>
+              <Link href='/'><button className={` transition-all duration-1000 ${activeButton === '/' ? 'font-semibold' : ''}`}> Home </button></Link>
+              <Link href='/aboutus'><button className={` transition-all duration-1000 ${activeButton === '/aboutus' ? 'font-semibold' : ''}`}>About</button></Link>
+              <button className='nav-button  transition-all duration-1000'>
                 Services+
                 <div className='hover-content text-start'>
                   <div className='px-5 border-b-2'> <span>Services 1</span> </div>
@@ -70,11 +70,11 @@ export default function Navbar() {
               </button>
 
               <button className='nav-button'>
-                <span className='hover:font-semibold transition-all duration-1000'>Shop</span>
+                <span className=' transition-all duration-1000'>Shop</span>
               </button>
               <Link href='/makeappoint'>
-                <button className='hover:font-semibold transition-all duration-1000'> <span className='hover:font-semibold transition-all duration-1000 text-red-400'>Make Appointment</span> </button></Link>
-              <button className='nav-button hover:font-semibold transition-all duration-1000'>
+                <button className={` transition-all duration-1000 ${activeButton === '/makeappoint' ? 'font-semibold' : ''}`}> <span className=' transition-all duration-1000 text-red-400'>Make Appointment</span> </button></Link>
+              <button className='nav-button  transition-all duration-1000'>
                 Pages+
                 <div className='hover-content text-start'>
                   <div className='px-5 border-b-2'>Appointment Grid</div>
@@ -87,7 +87,7 @@ export default function Navbar() {
 
                 </div>
               </button>
-              <button className='hover:font-semibold transition-all duration-1000'>Contact</button>
+              <button className=' transition-all duration-1000'>Contact</button>
             </div>
           </div>
         </div>
