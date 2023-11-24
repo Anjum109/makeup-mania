@@ -42,8 +42,8 @@ export default function MakeAppointment() {
             <div className='appoint-bg max-w-screen-xl mx-auto mt-12 mb-[200px] flex'>
                 <div className='flex w-full'>
                     {/* 1  */}
-                    <div className='w-full lg:w-[60%] bg-white mx-[30px] mt-[70px] mb-[20px] p-3'>
-                        <div className=' bg-gray-100 w-full h-full p-[30px]'>
+                    <div className='w-full lg:w-[60%] bg-white lg:mx-[30px] mt-[70px] mb-[20px] lg:p-3'>
+                        <div className=' bg-gray-100 w-full h-full lg:p-[30px]'>
                             <div>
                                 <h1 className='text-[40px] text-red-400 mt-6'> <span className={pacifico.className}>Make Your Appointment</span> </h1>
                                 <p className='text-[14px] text-gray-500 me-6 mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -83,7 +83,7 @@ export default function MakeAppointment() {
                                     <input type='time' required placeholder='Select Time' className='bg-gray-200 outline-none w-full px-4 py-5' onChange={handleTimeChange} />
                                 </div>
                                 <textarea type='text' placeholder='Your Message' className='bg-gray-200 outline-none w-full px-4 py-5 h-[150px] mt-5' />
-                                <div className='flex justify-center mt-5 '>  <button className='w-[300px] '> <input type='submit' required placeholder='Phone Number' className=' outline-none w-full px-4 py-5 text-xl rounded-full font-bold text-red-500 bg-red-200 hover:text-white hover:bg-red-500 transition-all duration-1000' /></button></div>
+                                <div className='flex justify-center mt-5 cursor-pointer '>  <button className='text-red-50 bg-red-400 rounded-full px-20 font-bold py-3 hover:px-24 hover:py-4 text-[20px] transition-all duration-1000 '>Submit</button></div>
                             </form>
                         </div>
                     </div>

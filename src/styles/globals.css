@@ -260,3 +260,16 @@ background-blend-mode: multiply;
 .dropdown-content.open {
   opacity: 1;
 }
+
+/* about us page  */
+@media only screen and (min-width: 1000px) {
+  .banner-aboutus-bg {
+    background-image: url('../assets/banner/abbg.png');
+    /* background-image: url('../assets/banner/EIA.w800.h800.305572ID_1.png'); 2 */
+    background-repeat: no-repeat;
+    background-position: left -13% top 10%;
+    /* background-position:  left -10% bottom 800%; 2 */
+    background-blend-mode: color-burn;
+    background-size: 500px;
+  }
+}
