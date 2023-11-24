@@ -57,8 +57,8 @@ export default function Navbar() {
         <div className='hidden lg:block'>
           <div className={smooch_sans.className}>
             <div className='flex gap-12 text-[25px] '>
-              <Link href='/'><button className={` transition-all duration-1000 ${activeButton === '/' ? 'font-semibold' : ''}`}> Home </button></Link>
-              <Link href='/aboutus'><button className={` transition-all duration-1000 ${activeButton === '/aboutus' ? 'font-semibold' : ''}`}>About</button></Link>
+              <Link href='/'><button className={` transition-all duration-1000 ${activeButton === '/' ? 'font-semibold text-red-400' : ''}`}> Home </button></Link>
+              <Link href='/aboutus'><button className={` transition-all duration-1000 ${activeButton === '/aboutus' ? 'font-semibold text-red-400' : ''}`}>About</button></Link>
               <button className='nav-button  transition-all duration-1000'>
                 Services+
                 <div className='hover-content text-start'>
@@ -73,7 +73,7 @@ export default function Navbar() {
                 <span className=' transition-all duration-1000'>Shop</span>
               </button>
               <Link href='/makeappoint'>
-                <button className={` transition-all duration-1000 ${activeButton === '/makeappoint' ? 'font-semibold' : ''}`}> <span className=' transition-all duration-1000 text-red-400'>Make Appointment</span> </button></Link>
+                <button className={` transition-all duration-1000 ${activeButton === '/makeappoint' ? 'font-semibold text-red-400' : ''}`}> <span className=' transition-all duration-1000 '>Make Appointment</span> </button></Link>
               <button className='nav-button  transition-all duration-1000'>
                 Pages+
                 <div className='hover-content text-start'>

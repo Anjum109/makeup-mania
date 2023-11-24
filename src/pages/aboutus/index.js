@@ -1,6 +1,8 @@
 import AboutUsBanner from '@/components/AboutUS/Banner/AboutUsBanner'
 import SecAboutusBanner from '@/components/AboutUS/Banner/SecAboutusBanner'
 import Feature from '@/components/AboutUS/Feature/Feature'
+import Team from '@/components/AboutUS/TeamMember/Team'
+import PhotoGallary from '@/components/HomeComp/PhotoGallary'
 import Layout from '@/components/Layout/Layout'
 import Head from 'next/head'
 import React from 'react'
@@ -16,9 +18,13 @@ export default function index() {
             <Layout>
                 <div className='banner-aboutus-bg bg-[#f3efef]'>
                     <AboutUsBanner />
-                    <SecAboutusBanner />
                     <Feature />
+                    <SecAboutusBanner />
                 </div>
+                <div className='bg-pink-100 pt-[100px]'>
+                    <Team />
+                </div>
+                <PhotoGallary />
             </Layout>
         </main>
     )

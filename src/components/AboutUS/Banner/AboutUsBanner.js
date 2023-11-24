@@ -3,6 +3,7 @@ import banner1 from '../../../assets/banner/banner.jpg'
 import Image from 'next/image'
 import { bebas, dancing, kanit } from '@/font/font'
 import { FaShoppingCart } from "react-icons/fa";
+import Link from 'next/link';
 
 export default function AboutUsBanner() {
     return (
@@ -19,10 +20,10 @@ export default function AboutUsBanner() {
                         <h1 className=' text-[40px] lg:text-[80px]'><span className={bebas.className}>ABOUT<span className='text-red-400'> US</span></span></h1>
 
                         <div className='flex justify-center'>
-                            <button className='flex items-center gap-3 text-sm hover:text-lg hover:px-8 hover:py-4  transition-all duration-1000 py-3 px-6 rounded-full border-2 border-red-200  text-red-50 bg-red-400'>
+                            <Link href='/makeappoint'> <button className='flex items-center gap-3 text-sm hover:text-lg hover:px-8 hover:py-4  transition-all duration-1000 py-3 px-6 rounded-full border-2 border-red-200  text-red-50 bg-red-400'>
                                 <div className=''>  <FaShoppingCart /></div>
                                 <p className={bebas.className}>Make Appointment</p>
-                            </button>
+                            </button></Link>
                         </div>
 
                     </div>

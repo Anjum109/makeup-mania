@@ -32,7 +32,7 @@ export default function Feauture() {
                 <div>
                     <Image src={spakit} alt='img' />
                 </div>
-                <div className='flex flex-col gap-5'>
+                <div className='flex flex-col gap-5 mx-5 lg:mx-0'>
                     <div className='flex gap-5 items-center lg:ms-[-100px]'>
                         <div className='text-[50px] text-red-400 bg-gray-200 p-5'
                             style={{ borderTopLeftRadius: '20%', borderTopRightRadius: '50%', borderBottomLeftRadius: '30%', borderBottomRightRadius: '30%' }}
