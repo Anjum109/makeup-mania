@@ -91,13 +91,23 @@ export default function OurServices() {
                                 <p className='text-center text-[13px] text-gray-500'>Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                             </div>
                         </div>
-                        {/* 4 */}
+                        {/* 1 */}
                         <div>
-                            <div className='flex flex-col h-[300px] mr-2 justify-center items-center bg-pink-200 hover:bg-pink-50 transition-all duration-1000 hover:border-2 hover:border-pink-200 p-5 cursor-pointer ' style={{ borderTopLeftRadius: '200px', borderTopRightRadius: '100px', borderBottomLeftRadius: '80px', borderBottomRightRadius: '90px' }}>
+                            <div className='flex flex-col h-[300px] mr-2 justify-center items-center bg-pink-200 hover:bg-pink-50 transition-all duration-1000 hover:border-2 hover:border-pink-200 p-8 cursor-pointer ' style={{ borderTopLeftRadius: '90px', borderTopRightRadius: '150px', borderBottomLeftRadius: '80px', borderBottomRightRadius: '60px' }}>
                                 <div>
-                                    <Image src={img4} alt='img1' className='w-[100px]' />
+                                    <Image src={img1} alt='img1' className='w-[100px]' />
                                 </div>
-                                <p className='text-[25px] font-bold text-gray-700 hover:text-red-400 transition-all duration-1000'><span className={kanit.className}>Medicine</span></p>
+                                <p className='text-[30px] font-bold text-gray-700 hover:text-red-400 transition-all duration-1000'><span className={kanit.className}>Stone spa</span></p>
+                                <p className='text-center text-[13px] text-gray-500'>Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            </div>
+                        </div>
+                        {/* 2 */}
+                        <div>
+                            <div className='flex flex-col h-[300px] mr-2 justify-center items-center bg-pink-200 hover:bg-pink-50 transition-all duration-1000 hover:border-2 hover:border-pink-200 p-5 cursor-pointer ' style={{ borderTopLeftRadius: '200px', borderTopRightRadius: '90px', borderBottomLeftRadius: '80px', borderBottomRightRadius: '90px' }}>
+                                <div>
+                                    <Image src={img2} alt='img1' className='w-[200px]' />
+                                </div>
+                                <p className='text-[25px] font-bold text-gray-700 hover:text-red-400 transition-all duration-1000'><span className={kanit.className}>Candle Message</span></p>
                                 <p className='text-center text-[13px] text-gray-500'>Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                             </div>
                         </div>

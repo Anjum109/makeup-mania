@@ -177,7 +177,6 @@ background-blend-mode: multiply;
 
 .flowermove {
   animation: flowermove 10s linear infinite;
-
 }
 
 @keyframes flowermove {
@@ -271,5 +270,40 @@ background-blend-mode: multiply;
     /* background-position:  left -10% bottom 800%; 2 */
     background-blend-mode: color-burn;
     background-size: 500px;
+  }
+}
+
+/* service page  */
+/* banner background  */
+@media only screen and (min-width: 1000px) {
+  .service-bg {
+    background-image: url('../assets/banner/gerbera-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: left -27% top 10%;
+    background-size: 700px;
+  }
+}
+
+/* ServicesTopic.css */
+
+@media only screen and (min-width: 1000px) {
+  .service-one-bg {
+    position: relative;
+    background-image: url('../assets/services/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10%;
+  }
+
+  .service-one-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
   }
 }

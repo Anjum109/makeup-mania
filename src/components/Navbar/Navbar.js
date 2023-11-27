@@ -59,15 +59,7 @@ export default function Navbar() {
             <div className='flex gap-12 text-[25px] '>
               <Link href='/'><button className={` transition-all duration-1000 ${activeButton === '/' ? 'font-semibold text-red-400' : ''}`}> Home </button></Link>
               <Link href='/aboutus'><button className={` transition-all duration-1000 ${activeButton === '/aboutus' ? 'font-semibold text-red-400' : ''}`}>About</button></Link>
-              <button className='nav-button  transition-all duration-1000'>
-                Services+
-                <div className='hover-content text-start'>
-                  <div className='px-5 border-b-2'> <span>Services 1</span> </div>
-                  <div className='px-5 border-b-2'>Services 2</div>
-                  <div className='px-5 border-b-2'>Services 3</div>
-
-                </div>
-              </button>
+              <Link href='/services'>  <button className='nav-button  transition-all duration-1000'>Services </button></Link>
 
               <button className='nav-button'>
                 <span className=' transition-all duration-1000'>Shop</span>
