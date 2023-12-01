@@ -24,7 +24,7 @@ export default function index() {
                 <div className='bg-pink-100 pt-[100px]'>
                     <Team />
                 </div>
-                <PhotoGallary />
+                <div className='hidden lg:block'><PhotoGallary /></div>
             </Layout>
         </main>
     )
