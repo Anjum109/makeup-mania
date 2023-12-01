@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
       </div>
-      <div className='flex justify-end items-center mt-[180px] lg:mt-12 text-[30px] gap-5 me-6 pb-12 '>
+      <div className='flex justify-end items-center mt-[250px] lg:mt-12 text-[30px] gap-5 me-6 pb-12 '>
         <div className='hover:text-red-400 trasition transition-all duration-1000 text-gray-700 cursor-pointer'>
           <FaFacebook />
         </div>

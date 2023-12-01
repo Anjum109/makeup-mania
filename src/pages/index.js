@@ -51,7 +51,9 @@ export default function Home() {
         <div className='bg-pink-100 mt-[-100px]'>
           <OurServices />
           <PricePlans />
-          <PhotoGallary />
+          <div className='hidden lg:block'>
+            <PhotoGallary />
+          </div>
         </div>
         <div className=' bg-[#f3efef]'>
           <MakeAppointment />

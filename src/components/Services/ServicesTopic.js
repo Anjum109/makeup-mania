@@ -5,7 +5,7 @@ export default function ServicesTopic() {
         <div className=' max-w-screen-xl mx-auto my-[150px]'>
             <div className='grid grid-cols-2 h-[500px] gap-5'>
                 <div className='service-one-bg '>
-                    <div className='w-full h-full flex flex-col justify-center items-center'>
+                    <div className='w-full h-full flex flex-col justify-center items-center hover:bg-red-200'>
                         <h1 className='text-[40px] font-bold text-white'>Winter Ritual</h1>
                     </div>
                 </div>

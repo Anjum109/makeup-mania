@@ -59,11 +59,10 @@ export default function Navbar() {
             <div className='flex gap-12 text-[25px] '>
               <Link href='/'><button className={` transition-all duration-1000 ${activeButton === '/' ? 'font-semibold text-red-400' : ''}`}> Home </button></Link>
               <Link href='/aboutus'><button className={` transition-all duration-1000 ${activeButton === '/aboutus' ? 'font-semibold text-red-400' : ''}`}>About</button></Link>
-              <Link href='/services'>  <button className='nav-button  transition-all duration-1000'>Services </button></Link>
+              <Link href='/services'>  <button className={` transition-all duration-1000 ${activeButton === '/services' ? 'font-semibold text-red-400' : ''}`}>Services </button></Link>
 
-              <button className='nav-button'>
-                <span className=' transition-all duration-1000'>Shop</span>
-              </button>
+              <Link href='/shop'>
+                <button className={` transition-all duration-1000 ${activeButton === '/shop' ? 'font-semibold text-red-400' : ''}`}>Shop </button></Link>
               <Link href='/makeappoint'>
                 <button className={` transition-all duration-1000 ${activeButton === '/makeappoint' ? 'font-semibold text-red-400' : ''}`}> <span className=' transition-all duration-1000 '>Make Appointment</span> </button></Link>
               <button className='nav-button  transition-all duration-1000'>
@@ -116,7 +115,7 @@ export default function Navbar() {
             </li>
             <li className='hover:bg-pink-900 hover:text-pink-100 p-[9px]'>
 
-              <button>ABOUT</button>
+              <Link href='/aboutus'> <button>ABOUT</button></Link>
 
             </li>
             <li className='hover:bg-pink-900 hover:text-pink-100 p-[9px]'>

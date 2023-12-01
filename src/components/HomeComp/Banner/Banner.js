@@ -3,6 +3,7 @@ import banner1 from '../../../assets/banner/banner.jpg'
 import Image from 'next/image'
 import { bebas, dancing, kanit } from '@/font/font'
 import { FaShoppingCart } from "react-icons/fa";
+import Link from 'next/link';
 
 export default function Banner() {
   return (
@@ -18,10 +19,11 @@ export default function Banner() {
           <h1 className=' text-[40px] lg:text-[80px]'><span className={bebas.className}>MAKEUP <span className='text-red-400'>MANIA</span></span></h1>
 
           <div className='flex justify-center'>
-            <button className='flex items-center gap-3 text-xl  transition-all duration-1000 py-4 px-5 hover:px-6 hover:py-5 rounded-full border-2 border-red-200 text-red-200 bg-red-400'>
-              <div className=''>  <FaShoppingCart /></div>
-              <p className={bebas.className}>Make Appointment</p>
-            </button>
+            <Link href='/makeappoint'>
+              <button className='flex items-center gap-3 text-xl  transition-all duration-1000 py-4 px-5 hover:px-6 hover:py-5 rounded-full border-2 border-red-200 text-red-200 bg-red-400'>
+                <div className=''>  <FaShoppingCart /></div>
+                <p className={bebas.className}>Make Appointment</p>
+              </button></Link>
           </div>
 
         </div>

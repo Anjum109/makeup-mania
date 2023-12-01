@@ -45,10 +45,10 @@ export default function MakeAppointment() {
                     <div className='w-full lg:w-[60%] bg-white lg:mx-[30px] mt-[70px] mb-[20px] lg:p-3'>
                         <div className=' bg-gray-100 w-full h-full lg:p-[30px]'>
                             <div>
-                                <h1 className='text-[40px] text-red-400 mt-6'> <span className={pacifico.className}>Make Your Appointment</span> </h1>
-                                <p className='text-[14px] text-gray-500 me-6 mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <h1 className='text-[40px] text-red-400 mt-6 ms-5 lg:ms-0'> <span className={pacifico.className}>Make Your Appointment</span> </h1>
+                                <p className='text-[14px] text-gray-500 me-6 mt-3 ms-5 lg:ms-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             </div>
-                            <form className='my-5'>
+                            <form className='my-5 mx-5 lg:mx-0'>
                                 <div className='grid grid-cols-2 gap-5'>
                                     <input type='text' placeholder='Name' className='bg-gray-200 outline-none w-full px-4 py-5' required />
                                     <input type='email' required placeholder='Email' className='bg-gray-200 outline-none w-full px-4 py-5' />

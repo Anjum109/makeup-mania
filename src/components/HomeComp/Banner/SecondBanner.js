@@ -5,16 +5,16 @@ import img from '../../../assets/banner/1.png';
 import SpaTopic from '../SpaTopic';
 
 export default function SecondBanner() {
- 
+
 
   return (
     <div className='pb-20 max-w-screen-lg mx-auto mt-12 lg:mt-[200px]'>
       <div className='second-banner-bg'>
         <div
           className='flex justify-center flowermove mix-blend-color-burn'
-          
+
         >
-          <Image src={img} alt='img' />
+          <Image src={img} alt='img' className='' />
         </div>
         <p className='text-center text-[30px] lg:text-[50px] font-bold lg:mt-[-30px]'>
           <span className={kanit.className}>
@@ -28,7 +28,7 @@ export default function SecondBanner() {
         </p>
       </div>
       <div>
-        <SpaTopic/>
+        <SpaTopic />
       </div>
     </div>
   );
